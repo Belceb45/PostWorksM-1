@@ -1,163 +1,105 @@
-<!DOCTYPE html><!--Esta etiqueta informa al explorador la version de mi archivo, en este caso HTML5-->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8"><!--Nos indica el tipo de caracteres-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATCHA</title>
+    <title>Document</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
-        
-        
-        
-        .handjet-unique {
-            font-family: "Handjet", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-                font-style: normal;
-                font-variation-settings:
-                "ELGR" 1,
-                "ELSH" 2;
-            }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #f8f9fa;
+            padding: 1rem 2rem;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
 
-            h1{
-                color: #0eafe0;
-                font-size: 32px;
-                font-weight: 500;
-                font-family: "Handjet";
-                
-            }
-            h2{
-                color: #c20909;
-                font-size: 60px;
-                font-weight: 400;
-                font-family: "Handjet";
-                
-            }
-            h3{
-                color: #5e3cd8;
-                font-size: 20px;
-                font-weight: 500;
-                font-family: "Handjet";
-                position: absolute;top: 35%;
-                
-            }
+        .logo img{
+            height: 70px;
+            margin-right: 2px;
 
-    body{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-    
-    }
+        }
 
-    .banner{
-        width: 800px;
-        height: 400px;
-        background-image: url('https://assets.bedu.org/contents/TECM0017FRFUV2_Fronted_fundamentals_V2/TECM0017FRFUV2_S1_3_1.png');
-        background-size: cover;
-        background-position: center;
-        display:  flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-        box-sizing: border-box;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            /* flex-direction: column; */
+        }
 
-    .banner h1{
-        font-size: 2.5em;
-        margin-bottom: 10px;
-    }
+        nav a{
+            text-decoration: none;
+            color: #333;
+        }
 
-    .banner h2{
-        font-size: 1.5em;
-        margin-bottom: 20px;
+        .auth-buttons{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
 
-    }
+        .login-btn{
+            background-color: #800040;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
 
-    .banner button{
-        padding: 15px 20px;
-        font-size: 1em;
-        background-color: rgb(110, 143, 110);
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-        transition:background-color 0.3s;
-    }
+        .register-link{
+            color: #800040;
+            text-decoration: none;
+        }
 
-    .banner button:hover{
-        background-color: #ff8533;
-
-    }
-
+        .video-section{
+            display: flex;
+            justify-content: s;
+            align-items: center;
+            height: 700px;
+            width: 2000px;
+        }
+        .video-section video{
+            max-width: 70%;
+            max-height: 70%;
+            height: auto;
+        }
 
     </style>
-
 </head>
-
 <body>
+    <header>
+        <a href="a" class="logo"><img src="img/Logo_IPN.png" alt=""></a>
 
-
-
-    <!-- <input type="text">
-    <input type="date">
-    <input type="time">
-    <input type="email">
-    <input type="password">
-    <input type="number">
-     -->
-     <!-- <body> -->
-        <!-- Aquí va el código anterior-->
-        <!-- <form>
-          <label>
-              correo: 
-              <input type="email" placeholder="ejemplo@dominio.com"/> -->
-
-          <!-- </label>
-          <button type="submit">
-            Try it now &rarr;;
-          </button>
-        </form> -->
-
-        <!-- <form> 
-            <label for="correo">Correo:</label>
-                <input type="email" name="correo" id="correo" placeholder="ejemplo@dominio.com"/>
-            <button type="submit">
-                Try it now &rarr;
-            </button>
-        </form> -->
-
-        <!-- <form>
-            <label>
-                
-                <h2>
-                    COMPRA YA
-                    
-                </h2>
-            </label>
-        </form> --> 
-
-<!-- 
-      </body> -->
-
-<body>
-    <div class="banner">
-        <h2>Oferta Especial</h1>
-        <h3>50% de descuento en todos los productos</h2>         
-        <div style="text-align: center;">
-            <button style="position: absolute;top: 62%;">Comprar ahora</button>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login-btn">Iniciar sesion</button>
+            <a href="#" class="register-link">Registrarse</a>
         </div>
-    </div>
+       
+    </header>    
+    <section class="video-section">
+        <!-- <video poster="img/Image20240923203856.png" controls src="video/huelum.mp4" type="video/mp4"></video> -->
+        <video controls src="video/huelum.mp4" type="video/mp4"></video>
+    </section>
 </body>
-      
-
-
-</body>
-
 </html>
