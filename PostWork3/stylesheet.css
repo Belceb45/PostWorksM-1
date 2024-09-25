@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #fffbf7;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article {
+
+
+}
+
+video {
+    display: flex;
+    /* justify-content:;
+    align-items: flex-start; */
+    /* margin-top: 22rem; */
+    /* Ajusta este valor para modificar la distancia entre el título y el video */
+    /* margin-right:-100px; */
+    width: 600px;
+    height: 200px;
+    /* max-width: 70%;
+    max-height: 70%; */
+    height: auto;
+}
+
+.container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: 20px;
+
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.login-btn {
+    background-color: #800040;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.register-link {
+    color: #800040;
+    text-decoration: none;
+}
+
+
