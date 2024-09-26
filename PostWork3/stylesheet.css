@@ -1,10 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: #fffbf7;
 }
 
 header {
-    background-color: #fffbf7;
+
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -12,36 +19,212 @@ header {
 }
 
 article {
-
+    padding: 30;
 
 }
 
 video {
-    display: flex;
+    /* display: flex; */
     /* justify-content:;
     align-items: flex-start; */
     /* margin-top: 22rem; */
     /* Ajusta este valor para modificar la distancia entre el título y el video */
     /* margin-right:-100px; */
-    width: 600px;
+    width: 300px;
     height: 200px;
     /* max-width: 70%;
     max-height: 70%; */
-    height: auto;
+    /* height: auto; */
 }
 
-.container {
+.container1 {
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    /* margin-left: 147px; */
+    /* margin-right: 147px;
+    margin-top: 235px;
+    max-width: 1100px;  */
+
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.container3 {
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    margin: 0 auto;
-    border: 1px solid #333;
-    padding: 20px;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+   margin-bottom: 200px;
 
 }
 
+.art1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.art1 p2{
+    font-size: 21px;
+    color: rgba(139, 139, 139, 0.8);
+    margin-bottom: 10px;
+}
+
+.capterra{
+    margin-top: 40;
+    margin-bottom: 30;
+}
+
+.matcha{
+    height: 600px;
+    width: 1200px;
+}
+
+
+.input1{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+}
+
+.input2{
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+}
+
+
+.form1{
+    margin-top: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+}
+
+.form1 p2 {
+    font-size: 21px;
+    color: rgba(139, 139, 139, 0.8);
+    
+}
+
+.input1 input{
+    font-size: 1em;
+    background-color: white;
+    border-bottom-color: gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-style: solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+.input1 button{
+ 
+    height: 10px;
+    width: 200px;
+    align-items: center;
+    display: flex;
+    padding: 30px 40px;
+    justify-content: center;
+    font-size: 1em;
+    background-color: rgb(2, 81, 87);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.botonform:hover {
+    background-color: #9c004f; 
+}
+
+
+.input2 button{
+   
+    height: 10px;
+    width: 200px;
+    align-items: center;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    background-color: rgb(2, 81, 87);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.input2 input{
+    font-size: 1em;
+    background-color: white;
+    border-bottom-color: gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-style: solid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.container1 h1 {
+    font-family: Alegreya, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 56px;
+    line-height: normal;
+    color: rgb(2, 81, 87);
+}
+
+.container3 h1{
+    font-family: Alegreya, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: normal;
+    color: rgb(2, 81, 87);
+}
+
+.container1 p {
+    font-family: Slabo 27px, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20.8px;
+    line-height: normal;
+    color: rgb(90, 90, 90);
+}
+
+.container3 p{
+    
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: rgb(90, 90, 90);
+}
 
 
 .logo {
@@ -65,7 +248,9 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: rgb(2, 81, 87);
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
 }
 
 .auth-buttons {
@@ -75,17 +260,19 @@ nav a {
 }
 
 .login-btn {
-    background-color: #800040;
+    background-color: #67B54B;
+    font-size: 12.8px;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     border: none;
     border-radius: 6px;
     cursor: pointer;
 }
 
 .register-link {
-    color: #800040;
+    color: #67B54B;
     text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 12.8px;
 }
-
-
