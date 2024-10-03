@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(2, 81, 87);
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.login-btn {
+    background-color: #67B54B;
+    font-size: 12.8px;
+    color: white;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.register-link {
+    color: #67B54B;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 12.8px;
+}
+
+main{
+    margin-top: 85px;
+    text-align: center;
+}
+
+h1{
+    color: rgb(2, 81, 87);
+    font-family: "Alegreya",serif;
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+
+h4{
+    color: #46484c;
+    font-family:"Slabo 27px",serif ;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+p{
+    color: #8b8b8b;
+    margin-top: 15px;
+
+}
+
+.form{
+    height: 55px;
+
+}
+
+input,button{
+    height: 100%;
+    border-radius: 8px;
+
+}
+
+input{
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 60%;
+    max-width: 250px;
+}
+
+button{
+    background-color: rgb(2, 81, 87);
+    color: white;
+    border: none;
+    border-top-left-radius:0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -10px;
+}
+
+figure{
+    margin-top: 32px;
+}
+
+figure.intro > img{
+    width: 70%;
+}
+
+.promo{
+    display: flex;
+    max-width: 70%;
+    margin: 100% auto;
+    align-items: center;
+}
+
+.explanatory-video{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explanatory-video img{
+    width: 120px;
+    margin-top: 10px;
+}
+
+.publish{
+    flex: 1;
+}
+
+.publish h3{
+    font-family: "Alegreya",serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgb(2, 81, 87);
+}
+
+.publish > p{/*Solo afectamos al parrafo que es hijo directo de publish, es decir, el primero que este despues del pusblish*/
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publish > form{
+    display: flex;
+}
+
+.publish > form p{
+    color: rgb(2, 81, 87);
+    margin-right: 18px;
+
+}
+
+.success-stories{
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.success-stories .overview{
+    flex: 2;
+    padding-right: 100px;
+}
+
+.success-stories .overview h2{
+    font-family: "Alegreya",serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: rgb(2, 81, 87);
+}
+
+.success-stories .overview p{
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.success-stories .overview button{
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.success-stories .overview img{
+    width: 500px;
+    max-width: 100%;
+}
+
+.success-stories .success-carousel{
+    flex: 1;
+}
+
+.success-stories .success-carousel .carousel-indiators{
+    position: unset;
+}
+
+.menu-toggle{
+    display: none;/*Oculta ese elmento*/
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-lines{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.hamburger-lines::before,
+.hamburger-lines::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transform: all 0.3s;
+}
+
+.hamburger-lines::before{
+    top: -8px;
+}
+
+.hamburger-lines::after{
+    top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger{
+        display: block;
+
+    }
+    nav ul{
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #f8f9fa;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+    nav ul li{
+        margin: 10px 0;
+    }
+
+    .auth-buttons{
+        display: none;
+    }
+    /*Cuando menu-toggle esta activado cambia display*/
+    .menu-toggle:checked ~ nav ul{
+        display: flex;
+    }
+
+    .menu-toggle:checked + .hamburger .hamburger-lines{
+        background-color: transparent;
+    }
+    .menu-toggle:checked + .hamburger .hamburger-lines::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .menu-toggle:checked + .hamburger .hamburger-lines::after{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+}
