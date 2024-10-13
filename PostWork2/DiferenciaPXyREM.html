@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Encabezado</title>
+
+
+    <style>
+        body{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #f8f9fa;
+            padding: 1rem;
+            display: flex;/*flex Hace con los elementos sean visibles*/
+            /* flex-direction:; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img{
+            height: 50px;
+        }
+
+        nav ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+
+        }
+
+        nav ul li{
+            margin-right: 1rem;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #333;
+        }
+
+        .explain{
+            display: flex;
+            justify-content: space-around;
+            text-align: justify;
+        }
+        .user-actions button{
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: .5rem 1rem;
+            cursor: pointer;
+        }
+
+        .titulo{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <!--class se usa como identificador para asignar un estilo o formato a una etiqueta-->
+        <a  href="#" class="logo"><!--Etiqueta usada para hipervinculos-->
+            <img src="https:/via.placeholder.com/150x50" alt="Logo de la empresa">
+        </a>
+        <nav><!--nav representa una seccion para vinculos-->
+            <ul>
+                <li><a href="#">inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                
+            </ul>
+
+        </nav>
+
+        <div class="user-actions">
+
+            <button>Iniciar sesion</button>
+
+        </div>
+        <!-- <p>HOLA MUNDO</p> -->
+    
+    </header>
+    <section class="postwork">
+        <div class="titulo"> 
+            <h2>Diferencia entre px y rem como unidades de medida</h2>
+        </div>
+        <div class="explain">
+            <div>
+                <h3>PX</h3>
+                <p>El px es una unidad de medida absoluta que representa un píxel de </br>la pantalla del dispositivo. Su tamaño es fijo, lo que significa que no </br>cambia en función del contexto o de la configuración del usuario. </br>Es ideal para casos en los que necesitas un control exacto sobre el </br>tamaño de un elemento, como en imágenes o iconos. Sin embargo, </br>su rigidez puede generar problemas en términos de accesibilidad y</br> en pantallas de diferentes tamaños, ya que no se adapta fácilmente </br>a variaciones en el diseño o preferencias del usuario.</p>
+            </div>
+            <div>
+                <h3>REM</h3>
+                <p>El rem, por otro lado, es una unidad de medida relativa que se basa </br>en el tamaño de fuente del elemento raíz (<html>). Esto hace que los </br>valores en rem sean flexibles y escalables, ya que dependen del tamaño</br> de fuente del documento completo. Si el tamaño de fuente del elemento</br> raíz cambia, todos los elementos que usan rem ajustarán sus tamaños </br>de manera proporcional. Esto lo convierte en una opción ideal para </br>diseños responsivos y accesibles, permitiendo que los usuarios controlen</br> el tamaño de los elementos según sus preferencias.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
